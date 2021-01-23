@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Snake 🐍</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 40px">Marwan's JavaScript Snake Game</h1>
+        <section class="instructions">
+            <span><img src="./img/wasd.svg" alt="WASD keys img" />
+              or
+              <img src="./img/arrows.svg" alt="Arrow Keys img" />
+              to move around
+            </span>
+            <span>🔵 Collect blue balls to grow</span>
+            <span>🔴 Avoid the red balls</span>
+        </section>
+    </header>
+
+    <main>
+        <section class="game">
+            <section class="gamescreen">
+                <button type="button" id="start-button">Start Game</button>
+                <div class="snake-head"></div>
+            </section>
+            <section class="score">SCORE<br /> <span id="score">00000</span> </section>
+        </section>
+    </main>
+</body>
+<script src="./index.js"></script>
+
+</html>

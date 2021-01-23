@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+    min-width: 1000px;
+}
+
+
+/*--------------------HEADER + INSTRUCTIONS--------------------*/
+
+header {
+    text-align: center;
+    background-image: radial-gradient( circle, greenyellow 0%, antiquewhite 100%, greenyellow 0%);
+    padding: 20px;
+}
+
+.instructions {
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+
+.instructions>span {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.instructions>span>img {
+    padding: 0px 12px;
+}
+
+
+/*--------------------GAME + SCORE--------------------*/
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: radial-gradient(#ffffff 1.1px, transparent 1.1px), radial-gradient(#ffffff 1.1px, #000000 1.1px);
+    background-size: 44px 44px;
+    background-position: 0 0, 22px 22px;
+}
+
+.gamescreen {
+    background-image: url(./img/background.png);
+    background-repeat: repeat;
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+
+#start-button {
+    display: block;
+    border: solid 3px grey;
+    background-image: linear-gradient(to right, greenyellow, rgb(79, 116, 23));
+    border-radius: 10px;
+    height: fit-content;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#start-button:hover {
+    cursor: pointer;
+}
+
+#start-button:active {
+    box-shadow: inset 0px 0px 5px black;
+}
+
+#start-button:active,
+#start-button:focus {
+    outline: 0;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    min-width: 100px;
+    padding-top: 100px;
+    border: dotted rgb(163, 238, 87) 4px;
+    color: greenyellow;
+    text-align: center;
+}
+
+
+/*--------------------SNAKE BODY--------------------*/
+
+.snake-head {
+    display: none;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+}
