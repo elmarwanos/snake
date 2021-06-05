@@ -15,9 +15,9 @@
         <h1 style="font-size: 40px">Marwan's JavaScript Snake Game</h1>
         <section class="instructions">
             <span><img src="./img/wasd.svg" alt="WASD keys img" />
-              or
-              <img src="./img/arrows.svg" alt="Arrow Keys img" />
-              to move around
+                or
+                <img src="./img/arrows.svg" alt="Arrow Keys img" />
+                to move around
             </span>
             <span>🔵 Collect blue balls to grow</span>
             <span>🔴 Avoid the red balls</span>
@@ -28,12 +28,16 @@
         <section class="game">
             <section class="gamescreen">
                 <button type="button" id="start-button">Start Game</button>
-                <div class="snake-head"></div>
+                <!-- <div class="snake-head"></div> -->
+                <canvas id="rass" height="800px" width="800px"></canvas>
             </section>
             <section class="score">SCORE<br /> <span id="score">00000</span> </section>
         </section>
     </main>
+
 </body>
-<script src="./index.js"></script>
+<script src="./snakeNode.js"></script>
+<script src="./snakeList.js"></script>
+<script src="./gameManager.js"></script>
 
 </html>
